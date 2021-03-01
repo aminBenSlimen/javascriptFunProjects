@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+
+<body>
+    <canvas></canvas>
+    <script>
+        var x=1200,dlx =0;lx=500,dx=-4,kliked =false,kliked2=false;
+        var ses,ke3a,bigBox,littelBox;
+        var m1 = 1,m2 = 1;
+    var canvas = document.querySelector("canvas");
+canvas.width =window.innerWidth;
+canvas.height = window.innerHeight;
+var c = canvas.getContext("2d");
+
+        function draw(){
+            c.clearRect(0,0,innerWidth,innerHeight);
+             c.clearRect(0,0,innerHeight,innerWidth);
+            c.fillStyle = "black";
+            bigBox = c.fillRect(x,800,200,200);
+            c.fillStyle = "green";
+            littelBox = c.fillRect(lx,800,200,200);
+            c.fillStyle = "#CB0000";
+            ses =  c.fillRect(50,50,100,1000);
+            ke3a = c.fillRect(50,1000,1800,100);
+             
+        }
+        draw();
+        function update(){
+              if(kliked2){
+                  kliked2=false;
+                  kliked = false;
+                   return;
+              }       
+            draw();         
+            if(x<lx+200){
+               var sumM = m1+m2;
+                var newV1 = (m1-m2)*dx/sumM + (2*m2 / m1+m2)*dlx;
+                
+                var newV2 = (m1-m2)*dx/sumM + (2*m2 / m1+m2)*dlx;    
+                dx= newV1;
+                dlx=newV2;
+                
+                
+            }
+            x+=dx;
+            lx+=dlx;
+            requestAnimationFrame(update);
+            
+        }
+        window.onclick = function(){
+            if(!kliked)
+            update();
+            
+            if(kliked){
+                kliked2=true;
+            }
+            kliked = true;
+        }
+          
+    </script>
+</body>
+</html>

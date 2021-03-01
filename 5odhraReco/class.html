@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+       <canvas></canvas>
+        <script>
+            var canvas = document.querySelector("canvas");
+            canvas.height =(window.innerHeight);
+            canvas.width =(window.innerWidth);
+            var c =canvas.getContext("2d"); 
+             alpha=0;
+              function update(x,y){
+                    this.x =x 
+                    this.y =y
+                    this.show = function(){
+                        this.x += Math.cos(alpha)*30;
+                        this.y += Math.sin(alpha)*30;
+                        alpha = -alpha
+                    }
+                    
+              }
+               var circels=[]
+            function draw(){
+               x =200;
+               y = 200;
+               alpha +=3;
+                window.addEventListener("mousedown",function(event){
+                    circels.push(new update(event.x,event.y))
+                })
+                c.fillStyle ='rgba(255,255,255,0.5)';
+                c.fillRect(0,0,innerWidth,innerHeight);
+                
+                c.fillStyle="blue";  
+                circels.forEach(element => {
+                    c.beginPath();
+                    element.show()
+                    c.arc(element.x,element.y,10,0,Math.PI*2,true)
+                    c.fill()
+                });
+               
+             requestAnimationFrame(draw);
+            }
+          draw()
+        </script>
+    </body>
+</html>

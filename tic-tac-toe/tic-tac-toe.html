@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head><title>learn java </title>
+    <style> 
+           input,input:active,input:target{
+            width: 100px;
+            height: 100px;
+           border: strong;
+               border-color:#03353E;
+            background-color: #04060F;
+            background-position:center;
+            color: darkred;
+               outline: none;
+            font-size: 50px;
+            font-family: fantasy;
+               opacity: 0%;
+        }
+        #main{
+            
+            position: absolute;
+            margin-left: 700px;
+            margin-bottom: 200px;
+            margin-top: 100px;
+        }
+        body{
+            background-color: #04060F;   
+        }
+        #tic{
+           
+            text-align: center;
+            font-size: 50px;
+            font-family: sans-serif;
+            margin-left: 640px;
+            margin-top: 70px;
+            color: #0294A5;
+            transform: translate(-30%,-50%);
+            letter-spacing: 4px;
+            animation: text 3s 1;
+            position: relative;
+        }
+        #put0{
+            border-right: none;
+            border-top: none;
+            border-left: none;
+        }
+        #put1{ border-right: none ;
+            border-top: none;
+        }
+        #put2{
+             border-top: none;
+             border-right: none;
+        }
+        #put3{
+            border-right: none;
+             border-left: none;
+        }
+        #put4{
+             border-right: none;
+        }
+        #put5{
+            border-right: none;
+        }
+        #put6{
+            border-right: none;
+           border-left: none;
+            border-bottom: none;
+        }
+        #put7{
+            border-bottom: none;
+             border-right: none;
+        }
+        #put8{
+            border-bottom: none;
+            border-right: none;
+        }
+        #not{
+            font-size: 50px;
+            font-family: fantasy;
+            margin-left: 0px;
+            margin-top: 20px;
+            color:cornsilk;
+        }
+        #x{ position: absolute;
+            font-size: 120px;
+            font-family:monospace;
+            margin-left: -565px;
+            top:-60px;
+            color:#C1403D ;
+            font-weight: bold ;
+        }
+        #xp{
+            position: absolute;
+            font-size: 70px;
+            font-family:monospace;
+            margin-left: -470px;
+            top:-15px;
+            color:cornsilk;
+            font-weight: bold ;
+        }
+        #xps{
+            position: absolute;
+            font-size: 120px;
+            font-family:monospace;
+            margin-left: -420px;
+            top:80px;
+            color:#0294A5;
+            font-weight: bold ;
+        }
+            #o{ position: absolute;
+            font-size: 120px;
+            font-family:monospace;
+            margin-left: 520px;
+            top:-60px;
+            color:#A79C93;
+            font-weight: bold ;
+        }
+        #op{
+            position: absolute;
+            font-size: 70px;
+            font-family:monospace;
+            margin-left: 605px;
+            top:-15px;
+            color:cornsilk ;
+            font-weight: bold ;
+        }
+        #ops{
+            position: absolute;
+            font-size: 120px;
+            font-family:monospace;
+            margin-left: 660px;
+            top:80px;
+            color:#0294A5;
+            font-weight: bold ;
+        }
+        @keyframes text{
+            0%{
+                color: #04060F;
+                letter-spacing: 35px;
+            }
+            35%{
+                letter-spacing: 0px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <h1 id="tic">Tic-Tac-Toe</h1>
+    <div id="main">
+    <input type="button" id="put0" value=" " onclick="put(1)"/>
+    <input type="button" id="put1" value=" " onclick="put(2)"/>
+    <input type="button" id="put2" value=" " onclick="put(3)"/><br>
+    <input type="button" id="put3" value=" " onclick="put(4)"/>
+    <input type="button" id="put4" value=" " onclick="put(5)"/>
+    <input type="button" id="put5" value=" " onclick="put(6)"/><br>
+    <input type="button" id="put6" value=" " onclick="put(7)"/>
+    <input type="button" id="put7" value=" " onclick="put(8)"/>
+    <input type="button" id="put8" value=" " onclick="put(9)"/><br>
+    <center><div id="not">play</div></center>
+        <div><span id="x">X</span><span id="xp">player</span><br><span id="xps">0</span></div>
+        <div><span id="o">o</span><span id="op">player</span><br><span id="ops" type="number">0</span></div>
+        </div>
+    <script src="java.js"></script>
+</body>
+</html> 

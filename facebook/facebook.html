@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head><title>facebook-connexion ou inscription</title>
+<link rel="icon" href="title.png"/>
+</head>
+<body>
+<style>
+.head
+{
+background-image:url("top.jpg");
+height:120px;
+}
+.k
+{position:absolute;
+font-family:arial;
+margin-top:45px;
+font-weight:bold;
+margin-left:300px;
+font-size:50px;
+color:white;
+width:200px;}
+.mail
+{color:white;
+font-size:17px;
+position:absolute;
+margin-left:900px;
+margin-top:15px;}
+.pass 
+{color:white;
+font-size:17px;
+position:absolute;
+margin-left:1170px;
+margin-top:15px;
+}
+#a
+{position:absolute;
+margin-left:900px;
+margin-top:30px;
+width:213px;
+height:23px;}
+#b
+{position:absolute;
+margin-left:1170px;
+margin-top:30px;
+width:205px;
+height:23px;}
+.c
+{background-color:blue;
+margin-left:1440px;
+color:#c5c5c5;
+margin-bottom:20px;
+}
+#submit
+{width:100px;
+font-size:20px;
+border-color:black;
+color:white;
+width:110px;
+height:25px;
+position:absolute;
+background-color:#1b55ce;
+margin-top:35px;
+}
+.d a
+{position:absolute;
+margin-left:1170px;
+margin-top:50px;
+color:white;
+}
+.bod
+{
+background-image:url("login.jpg");
+height:740px;
+width:1900px;
+background-size:cover;
+}
+.z
+{position:absolute;
+color:#06125d;
+font-size:25px;
+font-weight:bold;
+font-family:arial;
+margin-left:300px;
+margin-top:29px;
+}
+.i
+{
+position:absolute;
+color:black;
+font-size:50px;
+font-weight:bold;
+font-family:arial;
+margin-left:1000px;
+margin-top:-30px;
+}
+.t
+{
+position:absolute;
+color:black;
+font-size:27px;
+font-family:arial;
+margin-left:1000px;
+margin-top:35px;
+}
+#prenom
+{
+position:absolute;
+border:black;
+height:50px;
+width:260px;
+border:solid #c5c5c5 1px;
+border-radius:7px;
+font-family:arial;
+font-size:26px;
+padding:5px;
+margin-left:1000px;
+margin-top:90px;
+}
+#famille
+{
+position:absolute;
+border:black;
+height:50px;
+width:220px;
+border:solid 1px #c5c5c5;
+border-radius:7px;
+font-family:arial;
+font-size:26px;
+padding:5px;
+margin-left:1290px;
+margin-top:90px;
+}
+#ml
+{
+position:absolute;
+border:black;
+height:50px;
+width:510px;
+border:solid 1px #c5c5c5;
+border-radius:7px;
+font-family:arial;
+font-size:26px;
+padding:5px;
+margin-left:1000px;
+margin-top:165px;
+}
+#mk
+{
+position:absolute;
+border:black;
+height:50px;
+width:510px;
+border:solid 1px #c5c5c5;
+border-radius:7px;
+font-family:arial;
+font-size:26px;
+padding:5px;
+margin-left:1000px;
+margin-top:240px;
+}
+.nes
+{position:absolute;
+font-family:arial;
+font-size:26px;
+margin-left:1000px;
+margin-top:325px;
+}
+#ooo
+{
+position:absolute;
+height:40px;
+width:70px;
+font-size:17px;
+padding:3px;
+margin-left:1000px;
+margin-top:370px;
+}
+#oo
+{
+position:absolute;
+font-size:17px;
+height:40px;
+width:70px;
+padding:3px;
+margin-left:1070px;
+margin-top:370px;
+}
+#o
+{
+position:absolute;
+font-size:17px;
+height:40px;
+width:90px;
+padding:3px;
+margin-left:1140px;
+margin-top:370px;
+}
+#m
+{
+position:absolute;
+font-size:15px;
+color:blue;
+margin-left:1250px;
+margin-top:370px;
+}
+.femme
+{
+position:absolute;
+font-family:arial;
+font-size:25px;
+margin-left:1030px;
+margin-top:430px;
+}
+.homme
+{
+position:absolute;
+font-family:arial;
+font-size:25px;
+margin-left:1160px;
+margin-top:430px;
+}
+#k
+{
+position:absolute;
+margin-left:1000px;
+margin-top:432px;
+}
+#j
+{
+position:absolute;
+margin-left:1127px;
+margin-top:432px;
+}
+#cc
+{position:absolute;
+color:gray;
+font-size:13px;
+font-family:arial;
+margin-left:1000px;
+margin-top:470px;
+}
+.ll 
+{
+color:blue;
+font-size:13px;
+font-family:arial;
+}
+input[type=button]
+{position:absolute;
+background-image:url("kiki.jpg");
+color:white;
+font-size:20px;
+font-family:arial;
+margin-left:1000px;
+margin-top:560px;
+height:50px;
+width:250px;
+font-weight:bold;
+border-radius:7px;
+}
+.po
+{position:absolute;
+color:gray;
+font-size:17px;
+font-family:arial;
+margin-left:1000px;
+margin-top:650px;
+font-weight:bold;
+}
+</style>
+<p class="head">
+<span class="k">facebook</span>
+<label class="mail">Adresse e-mail ou mobile</label>
+<label class="pass">Mot de passe</label><br>
+<input type="email" id="a"/>
+<input type="password" id="b" />
+<span class="c"><input type="submit" value="connexion" id="submit" onclick="mot()"/></span><br>
+<span class="d"><a href="">	Informations de compte oubliées ?</a></span>
+</p>
+ <p class="bod">
+ <span class="z" >Avec Facebook, partagez et restez en contact </span><br><br>
+  <span class="z" >avec votre entourage. </span>
+		<span class="i">Inscription</span>
+		<span class="t">C’est gratuit (et ça le restera toujours)</span>
+		<span><input type="text" placeholder="Prenom" id="prenom"/></span>
+		<span><input type="text" placeholder="Nom de famille" id="famille"/></span>
+		<span><input type="e-mail" placeholder="Nom de mobile ou e-mail" id="ml"/></span>
+		<span><input type="password" placeholder="Nouveau mot de passe" id="mk"/></span>
+		<span class="nes">Date de naissance</span>
+		<select id="ooo">
+		<option>jour</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select>
+		<select id="oo">
+		<option>mois</option>
+		<option>fev</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select>
+		<select id="o">
+		<option>annee</option>
+		<option>fev</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select>
+		<span id="m"><a href="">Pourquoi indiquer ma date de<br> naissance ?</a></span>
+		<span id="k"><input type="radio" name="f" /></span><label class="femme">Femme</label>
+		<span id="j"><input type="radio" name="f"/></span><label class="homme">Homme</label>
+		<span id="cc">En appuyant sur Inscription, vous acceptez nos <span class="ll">Conditions<br> générales</span>, notre <span class="ll">Politique d’utilisation 
+		des données </span>et notre<br> <span class="ll">Politique d’utilisation des cookies</span>. Vous recevrez peut-être des <br>notifications par
+		texto de notre part et vous pouvez à tout <br>moment vous désabonner.</span>
+		<input type="button" value="Inscription"/>
+		<span class="po"><a href="">Créer une Page</a> pour une célébrité, un groupe ou une entreprise.</span>
+		</p>
+    
+    <script src="motpass.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <style>
+        #hello { 
+           position: absolute;
+           left: 50%;
+            top: 50%;
+            margin-left:-50px;
+            margin-top:-50px;
+            width: 150px;
+            height: 35px;
+            background:none;
+            border: 2 px;
+            color:darkcyan;
+            border: 2px solid darkcyan ;
+            font-family: montserrat ;
+            transition: 0.8s;
+        }
+        #hello:hover{
+            color:#fff;
+              border-color: #fff;
+        }
+        #hello::before{
+            content: "";
+            position: absolute;
+            right: -2px;
+            top:-2px;
+            background-color:#00BFFF;
+            width: 150px;
+            height: 0px;
+            z-index: -1;
+            border-radius: 0px 0px 80px 80px ;
+            transition: .1s;
+            
+        }
+        #hello:hover::before{
+            content: "";
+            height: 35px;
+            background-color: #00BFFF;
+            border-radius: 0px 0px 0px 0px;
+          
+        }
+     
+    </style>
+    <body>
+        
+    <button id="hello"><span id="click">click</span></button>
+    </body>
+</html>

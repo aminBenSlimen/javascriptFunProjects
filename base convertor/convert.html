@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertor</title>
+    <link rel="icon" href="logo.png"/>
+    <style>
+           #convert{
+           
+            text-align: center;
+            font-size: 38px;
+            font-family: sans-serif;
+            margin-left: 290px;
+            margin-top: 20px;
+            color: #A20067;
+            transform: translate(-30%,-50%);
+            letter-spacing: 1px;
+            animation: text 3s 1;
+            position: relative;
+               font-weight: 700;
+        }
+        @keyframes text{
+            0%{
+                color: #EAD3E2 ;
+                letter-spacing: 35px;
+            }
+            35%{
+                letter-spacing: -1px;
+            }
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url("backblur.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+            #box{
+            background-color: #5D535E;
+            opacity: 0.9;
+            border-radius: 20px 20px 20px 20px;
+            width: 140px;
+            padding: 40px;
+            position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height:200px;
+                border: 1px solid #F18D9E;
+                box-shadow: 0 5px 10px #F18D9E;
+        }
+        #decimal{
+            position: absolute;
+            top:40px;
+            left: 25px;
+        }
+        #binary{
+            position: absolute;
+            top:90px;
+            left: 25px;
+        
+        }
+        #hexadecimal{
+            position: absolute;
+            top:140px;
+            left: 25px;
+        
+        }
+         #octal{
+            position: absolute;
+            top:190px;
+            left: 25px;
+        
+        }
+        #decimalL{
+            position: absolute;
+            top:49px;
+            left: 20px;
+        }
+        #binaryL{
+            position: absolute;
+            top:99px;
+            left: 20px;
+        
+        }
+        #hexadecimalL{
+            position: absolute;
+            top:149px;
+            left: 20px;
+        
+        }
+         #octalL{
+            position: absolute;
+            top:199px;
+             left: 20px;}
+        
+        input { 
+            width: 100px;
+            height: 30px;
+            background:none;
+            border: 2 px;
+            color:#EAD3E2;
+            border: 2px solid #FFCCAC ;
+            font-family: montserrat ;
+            transition: 0.8s;
+            border-radius: 30px 30px 30px 30px;
+            border: 1px solid #FFCCAC;
+            box-shadow: 0 5px 10px black;
+            text-align: center;
+            outline: none;
+            margin-left: 60px;
+            top: 50px;
+           
+            
+            
+        }
+       input:hover,input:focus{
+            color:#E10098;
+              border-color: #EC96A4;
+            background-color: #9A9EAB;
+            opacity: 1;
+           box-shadow: 0 5px 10px white;
+           letter-spacing: 1px;
+           font-size: 15px;
+        }
+        input::before{
+            content: "";
+            position: absolute;
+            right: -2px;
+            top:-2px;
+            background-color:#EC96A4;
+            width: 150px;
+            height: 0px;
+            z-index: -1;
+            border-radius: 0px 0px 120px 120px ;
+            transition: 0.3s;
+            
+        }
+        input:hover::before{
+            content: "";
+            height: 35px;
+            background-color: #EC96A4;
+            border-radius: 0px 0px 0px 0px;
+          
+        }
+        label{
+            color: currentColor;
+            font-family: sans-serif;
+            font-size: 16px;
+            
+        }
+        button{
+            width: 70px;
+            height: 30px;
+            background-color: black;
+            border: 2 px;
+            color:#EAD3E2;
+            border: 2px solid #FFCCAC ;
+            font-family: montserrat ;
+            transition: 0.3s;
+            border-radius: 20px 20px 20px 20px;
+            border: 1px solid #FFCCAC;
+            box-shadow: 0 5px 10px black;
+            text-align: center;
+            outline: none;
+            margin-left: 35px;
+            margin-top: 123px;
+            
+        }
+        button:hover{
+            opacity: 1;
+            box-shadow: 0 5px 10px white;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="convert">Base converter</div>
+    <div id="box">
+     <label id="decimalL">DEC : </label><input type="text" id="decimal"/><br>
+     <label id="binaryL">BIN : </label><input type="text" id="binary" /><br>
+     <label id="hexadecimalL">HEXA : </label><input type="text" id="hexadecimal"/><br>
+     <label id="octalL">OCTAL : </label><input type="text" id="octal"/><br>
+    <button onclick="reset()">Reset</button>
+    </div>
+    <script src="convert.js"></script>
+</body>
+</html>
